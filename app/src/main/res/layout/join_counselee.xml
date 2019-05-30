@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/img_sign_lee"
+        android:layout_width="match_parent"
+        android:layout_height="61dp"
+        tools:srcCompat="@tools:sample/avatars[15]" />
+
+    <ImageView
+        android:id="@+id/img_counselee"
+        android:layout_width="match_parent"
+        android:layout_height="102dp"
+        tools:srcCompat="@tools:sample/avatars[4]" />
+
+    <EditText
+        android:id="@+id/editText_c_name"
+        android:layout_width="match_parent"
+        android:layout_height="84dp"
+        android:hint="이름"
+        android:layout_marginBottom="10dp"/>
+
+    <EditText
+        android:id="@+id/editText_c_email"
+        android:layout_width="match_parent"
+        android:layout_height="89dp"
+        android:ems="10"
+        android:hint="이메일"
+        android:inputType="textEmailAddress"
+        android:layout_marginBottom="10dp"/>
+
+    <EditText
+        android:id="@+id/editText_c_phone"
+        android:layout_width="match_parent"
+        android:layout_height="92dp"
+        android:ems="10"
+        android:hint="핸드폰"
+        android:inputType="phone"
+        android:layout_marginBottom="10dp"/>
+
+    <EditText
+        android:id="@+id/editText_c_password"
+        android:layout_width="match_parent"
+        android:layout_height="91dp"
+        android:ems="10"
+        android:hint="비밀번호"
+        android:inputType="textPassword"
+        android:layout_marginBottom="10dp"/>
+
+    <Button
+        android:id="@+id/btn_send"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="보내기"
+        android:onClick="send"/>
+</LinearLayout>

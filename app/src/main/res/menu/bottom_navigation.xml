@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_feedback"
+        android:icon="@drawable/ic_launcher_foreground"
+        android:title="feedback" />
+
+    <item
+        android:id="@+id/navigation_statistics"
+        android:icon="@drawable/ic_launcher_foreground"
+        android:title="statistics" />
+
+    <item
+        android:id="@+id/navigation_main"
+        android:icon="@drawable/ic_launcher_foreground"
+        android:title="main" />
+
+
+    <item
+        android:id="@+id/navigation_calendar"
+        android:icon="@drawable/ic_launcher_foreground"
+        android:title="calendar" />
+
+    <item
+        android:id="@+id/navigation_member"
+        android:icon="@drawable/ic_launcher_foreground"
+        android:title="login" />
+</menu>
