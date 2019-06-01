@@ -9,6 +9,12 @@ import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 
+import com.example.menu.MenuCalendar;
+import com.example.menu.MenuFeedback;
+import com.example.menu.MenuMain;
+import com.example.menu.MenuMember;
+import com.example.menu.MenuStatistics;
+
 
 public class MainActivity extends AppCompatActivity {
 

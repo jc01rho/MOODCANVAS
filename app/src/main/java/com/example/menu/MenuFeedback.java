@@ -1,4 +1,4 @@
-package com.example.moodcanvas;
+package com.example.menu;
 
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -8,10 +8,13 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-public class MenuMain extends Fragment {
+import com.example.moodcanvas.R;
+
+public class MenuFeedback extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.menu_main, container, false);
+        //넘어온 화면 보여주기
+        return inflater.inflate(R.layout.menu_feedback, container, false);
     }
 }

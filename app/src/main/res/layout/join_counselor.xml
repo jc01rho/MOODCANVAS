@@ -18,11 +18,11 @@
         android:layout_height="102dp"
         tools:srcCompat="@tools:sample/avatars[4]" />
 
-    <TextView
+    <EditText
         android:id="@+id/text_m_name"
         android:layout_width="match_parent"
         android:layout_height="84dp"
-        android:text="이름"
+        android:hint="이름"
         android:layout_marginBottom="10dp"/>
 
     <EditText
@@ -31,6 +31,7 @@
         android:layout_height="89dp"
         android:ems="10"
         android:inputType="textEmailAddress"
+        android:hint="이메일"
         android:layout_marginBottom="10dp"/>
 
     <EditText
@@ -39,6 +40,7 @@
         android:layout_height="92dp"
         android:ems="10"
         android:inputType="phone"
+        android:hint="핸드폰"
         android:layout_marginBottom="10dp"/>
 
     <EditText
@@ -47,5 +49,6 @@
         android:layout_height="91dp"
         android:ems="10"
         android:inputType="textPassword"
+        android:hint="비밀번호"
         android:layout_marginBottom="10dp"/>
 </LinearLayout>
