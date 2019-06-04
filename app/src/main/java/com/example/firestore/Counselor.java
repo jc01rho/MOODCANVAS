@@ -10,6 +10,13 @@ public class Counselor {
     protected String contract;
     protected String codeNum;
 
+    public Counselor(String name, String email, String phone, String password) {
+        this.name = name;
+        this.email = email;
+        this.phone = phone;
+        this.password = password;
+    }
+
     public Counselor(String name, String email, String phone, String password, String contract) {
         this.name = name;
         this.email = email;

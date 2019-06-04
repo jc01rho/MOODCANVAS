@@ -25,7 +25,7 @@ public class MenuMember extends Fragment {
         final View menuMemberView = inflater.inflate(R.layout.join_main, container, false);
 
         //내담자 가입 화면으로 넘어가기
-        ImageButton button_join_counselee = menuMemberView.findViewById(R.id.btn_counselee);
+        ImageButton button_join_counselee = menuMemberView.findViewById(R.id.btn_send_counselee);
         button_join_counselee.setOnClickListener(new ImageButton.OnClickListener(){
             @Override
             public void onClick(View v) {
@@ -37,13 +37,12 @@ public class MenuMember extends Fragment {
         });
 
         //상담사 가입 화면으로 넘어가기
-        ImageButton button_join_counselor = menuMemberView.findViewById(R.id.btn_counselor);
+        ImageButton button_join_counselor = menuMemberView.findViewById(R.id.btn_send_counselor);
         button_join_counselor.setOnClickListener(new ImageButton.OnClickListener(){
             @Override
             public void onClick(View v) {
                 memberCategory = "counselor";
                 Intent intent = new Intent(menuMemberView.getContext(), JoinActivity.class);
-                startActivity(intent);
                 intent.putExtra("memberCategory", memberCategory);
                 startActivity(intent);
             }

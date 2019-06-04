@@ -19,7 +19,7 @@
         tools:srcCompat="@tools:sample/avatars[4]" />
 
     <EditText
-        android:id="@+id/text_m_name"
+        android:id="@+id/editText_m_name"
         android:layout_width="match_parent"
         android:layout_height="84dp"
         android:hint="이름"

@@ -6,10 +6,10 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.annotation.Nullable;
-import com.google.firebase.firestore.FirebaseFirestore;
 
 
 public class SplashActivity extends Activity {
+    //수정하기
 
     // 로딩 화면 떠 있는 시간
     private final int SPALSH_DISPALY_LENGTH = 1000;
@@ -21,10 +21,6 @@ public class SplashActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.splash);
 
-        //firebasfristore 연결
-        FirebaseFirestore db = FirebaseFirestore.getInstance();
-
-
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
@@ -34,4 +30,5 @@ public class SplashActivity extends Activity {
             }
         }, SPALSH_DISPALY_LENGTH);
     }
+
 }

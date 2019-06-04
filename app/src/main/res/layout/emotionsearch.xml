@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="558dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="75dp"
+        android:background="@drawable/mood_block_emotion">
+
+        <LinearLayout
+            android:layout_width="385dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/editText_search_emotion"
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="24dp"
+                android:hint="감정 검색"></EditText>
+
+            <LinearLayout
+                android:layout_width="313dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginBottom="444dp"
+                android:layout_weight="1"
+
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/bt_color5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:padding="0sp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/mood_emotion_bt_color5" />
+
+                <ImageButton
+                    android:id="@+id/bt_color4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:padding="0sp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/mood_emotion_bt_color4" />
+
+                <ImageButton
+                    android:id="@+id/bt_color3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:padding="0sp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/mood_emotion_bt_color3" />
+
+                <ImageButton
+                    android:id="@+id/bt_color2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:padding="0sp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/mood_emotion_bt_color2" />
+
+                <ImageButton
+                    android:id="@+id/bt_color1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:padding="0sp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/mood_emotion_bt_color1" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

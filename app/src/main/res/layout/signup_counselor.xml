@@ -3,22 +3,22 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
     android:background="@drawable/mood_bg"
     android:orientation="vertical"
-    tools:context=".JoinActivity">
+    tools:context=".MainActivity">
 
     <ImageView
-        android:id="@+id/img_sign_lee"
+        android:id="@+id/img_bar_signup"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:adjustViewBounds="true"
         android:padding="0sp"
         android:scaleType="fitCenter"
-        app:srcCompat="@drawable/mood_bar_signup"/>
+        app:srcCompat="@drawable/mood_bar_signup" />
 
     <ImageView
-        android:id="@+id/imgTxt_counslee"
+        android:id="@+id/imgTxt_counslor"
         android:layout_width="86dp"
         android:layout_height="28dp"
         android:adjustViewBounds="true"
@@ -27,7 +27,7 @@
         android:layout_marginVertical="40dp"
         android:layout_gravity="center"
 
-        app:srcCompat="@drawable/mood_text_counselee"  />
+        app:srcCompat="@drawable/mood_text_counselor" />
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -35,47 +35,44 @@
         android:orientation="vertical">
 
         <EditText
-            android:id="@+id/editText_c_name"
+            android:id="@+id/editText_counslor_name"
             android:layout_width="match_parent"
             android:layout_height="45dp"
             android:layout_marginHorizontal="35dp"
             android:layout_marginVertical="25dp"
             android:background="@drawable/mood_textblock_big"
-            android:hint="이름"/>
+            android:hint="이름" />
 
         <EditText
-            android:id="@+id/editText_c_email"
+            android:id="@+id/editText_counslor_number"
             android:layout_width="match_parent"
             android:layout_height="45dp"
             android:layout_marginHorizontal="35dp"
             android:layout_marginVertical="25dp"
             android:background="@drawable/mood_textblock_big"
-            android:inputType="textEmailAddress"
+            android:hint="등록번호" />
+
+        <EditText
+            android:id="@+id/editText_counslor_email"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginHorizontal="35dp"
+            android:layout_marginVertical="25dp"
+            android:background="@drawable/mood_textblock_big"
             android:hint="이메일" />
 
         <EditText
-            android:id="@+id/editText_c_phone"
-            android:inputType="phone"
+            android:id="@+id/editText_counslor_password"
             android:layout_width="match_parent"
             android:layout_height="45dp"
             android:layout_marginHorizontal="35dp"
             android:layout_marginVertical="25dp"
             android:background="@drawable/mood_textblock_big"
-            android:hint="핸드폰"/>
-
-        <EditText
-            android:id="@+id/editText_c_password"
-            android:inputType="textPassword"
-            android:layout_width="match_parent"
-            android:layout_height="45dp"
-            android:layout_marginHorizontal="35dp"
-            android:layout_marginVertical="25dp"
-            android:background="@drawable/mood_textblock_big"
-            android:hint="비밀번호"/>
+            android:hint="비밀번호" />
     </LinearLayout>
 
     <ImageButton
-        android:id="@+id/btn_send_c"
+        android:id="@+id/bt_next"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="15dp"
@@ -84,5 +81,4 @@
         android:padding="0sp"
         android:scaleType="fitCenter"
         app:srcCompat="@drawable/mood_buttom_next" />
-
 </LinearLayout>
