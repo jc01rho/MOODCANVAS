@@ -41,33 +41,42 @@ public class MainActivity extends AppCompatActivity {
         transaction.replace(R.id.frame_layout, menuMain).commitAllowingStateLoss();
 
         // bottomNavigationView 리스너 등록
-        bottomNavigationView.setOnNavigationItemReselectedListener(new BottomNavigationView.OnNavigationItemReselectedListener() {
+
+
+        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
-            public void onNavigationItemReselected(@NonNull MenuItem menuItem) {
+            public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
                 FragmentTransaction transaction1 = fragmentManager.beginTransaction();
 
                 switch (menuItem.getItemId()){
                     case R.id.navigation_feedback:
                         transaction1.replace(R.id.frame_layout, menuFeedback).commitAllowingStateLoss();
-                        break;
+                        return true;
 
                     case R.id.navigation_statistics:
                         transaction1.replace(R.id.frame_layout, menuStatistics).commitAllowingStateLoss();
-                        break;
+                        return true;
 
                     case R.id.navigation_main:
                         transaction1.replace(R.id.frame_layout, menuMain).commitAllowingStateLoss();
-                        break;
+                        return true;
 
                     case R.id.navigation_calendar:
                         transaction1.replace(R.id.frame_layout, menuCalendar).commitAllowingStateLoss();
-                        break;
+                        return true;
 
                     case R.id.navigation_member:
                         transaction1.replace(R.id.frame_layout, menuMember).commitAllowingStateLoss();
+                        return true;
+
+                    default :
                         break;
                 }
+
+                return false;
             }
         });
+
+
     }
 }
